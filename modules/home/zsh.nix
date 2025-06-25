@@ -16,6 +16,10 @@ in {
 
 			plugins = [
 				{
+					name = "zsh-nix-shell";
+					src = pkgs."zsh-nix-shell";
+				}
+				{
 					name = "fzf-tab";
 					src = pkgs.zsh-fzf-tab;
 				}

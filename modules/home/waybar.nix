@@ -176,7 +176,7 @@ in {
           # modules
           modules-left = [
             "custom/logo"
-            "sway/workspaces"
+	          "sway/workspaces"
           ];
           modules-center = [
             "clock"
@@ -184,7 +184,7 @@ in {
           modules-right = [
             "tray"
             "memory"
-            "pulseaudio"
+						#            "pulseaudio"
             "custom/power"
           ];
           "custom/logo" = {

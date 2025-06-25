@@ -16,7 +16,7 @@ in {
 			settings = {
 				scrollback_lines = 100000;
 				enable_bell_audio = false;
-				confirm_os_window_close = false;
+				#confirm_os_window_close = false;
 
 				tab_bar_min_tabs = 1;
 				tab_bar_edge = "bottom";

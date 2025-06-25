@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
 
 {
+
 	boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true;
+	#boot.loader.efi.canTouchEfiVariables = true;
 
 	networking.hostName = "athena";
 
@@ -20,6 +21,8 @@
 
 	environment.systemPackages = with pkgs; [
 		nixd
+		firefox
+		wl-clipboard
 	];
 
 	services.openssh.enable = true;
@@ -27,7 +30,7 @@
 	nixpkgs.config = {
 		allowUnfree = true;
 	};
-
+	stuff.common.enable = true;
 	stuff.home-manager = {
 		enable = true;
 		users.nikki.enable = true;

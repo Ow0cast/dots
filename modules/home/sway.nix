@@ -8,6 +8,7 @@ in {
 	options.stuff.sway.enable = mkEnableOption "Sway";
 
 	config = mkIf cfg.enable {
+		services.swww.enable = true;
 		wayland.windowManager.sway = {
 			enable = true;
 			extraConfig = ''
